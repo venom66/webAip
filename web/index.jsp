@@ -3,7 +3,9 @@
     Created on : 2018-11-07, 12:50:55
     Author     : BartD
 --%>
+<%@page import="java.sql.*"%>
 <%@page import="java.util.Date" %>
+<% Class.forName("com.mysql.jdbc.Driver"); %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!--
@@ -50,7 +52,7 @@ and open the template in the editor.
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="#"> Home </a></li>
 					<li><a href="#omnie"> O mnie  </a></li>
-					<li><a href="#Galeria"> Galeria </a></li>
+					<li><a href="katalogfilmow.jsp"> Katalog filmow </a></li>
 					<li><a href="#kontakt"> Kontakt </a></li>
 				</ul>
 					
@@ -62,8 +64,55 @@ and open the template in the editor.
 </nav>
         
     <center>
-        <div> <h1> Witaj w wypożyczalni filmów </h1> </div>
+        <div> <h1> Witaj w sklepie z filmami </h1> </div>
+        
     </center>
+    <div><h2> Wyszykaj film:  </h2> </div>
+    
+    
+    
+    <form name="myForm" action="display.jsp" method="POST">
+        
+        <table border="1">
+           
+            <tbody>
+                <tr>
+                    <td>Id: </td>
+                    <td><input type="text" name="id" value="" size="30" /></td>
+                </tr>
+                <tr>
+                    <td>Tytuł: </td>
+                    <td><input type="text" name="tytul" value="" size="30" /></td>
+                </tr>
+                <tr>
+                    <td>Kategoria: </td>
+                    <td><select name="kat">
+                            <option>dramat</option>
+                            <option>obyczajowy</option>
+                            <option>komedia</option>
+                            <option>akcja</option>
+                            <option>horror</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Rok: </td>
+                    <td><input type="text" name="rok" value="RRRR" size="30" /></td>
+                </tr>
+                <tr>
+                    <td>Opis: </td>
+                    <td><input type="text" name="op" value="" size="30" /></td>
+                </tr>
+                <tr>
+                    <td>Cena: </td>
+                    <td><input type="text" name="prise" value="" size="30" /></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <input type="reset" value="Clear" name="clear" />
+
+        <input type="submit" value="Submit" name="submit" />
+    </form>
         
     </body>
 </html>
