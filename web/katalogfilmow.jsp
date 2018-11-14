@@ -4,6 +4,10 @@
     Author     : BartD
 --%>
 
+
+<%@page import="java.lang.String"%>
+<%@page import="testDB.*"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -11,7 +15,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+    
+        <h1>Katalog filmów to: </h1>
+        
+        <%= testBD.main;%>
+        
+    
 </html>

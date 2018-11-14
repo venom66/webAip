@@ -10,6 +10,7 @@ import java.sql.*;
  *
  * @author BartD
  */
+
 public class testBD {
     
     private static final String USERNAME = "root";
@@ -21,9 +22,25 @@ public class testBD {
         
         conn = DriverManager.getConnection(CONN_STRING, USERNAME, PASSWORD);
         System.out.println("Connected!!!!");
-    
+        
+        
+       Statement st = conn.createStatement();
+       ResultSet rs = st.executeQuery("Select * From sklep");
+  
+            
+        while(rs.next())
+        {
+            System.out.println(rs.getString(1));
+            System.out.println(rs.getString(2));
+            System.out.println(rs.getString(3));
+            System.out.println(rs.getString(4));
+            System.out.println(rs.getString(5));
+            System.out.println("--------------------------");
+        
+        
+        }
+        }
     }
    
     
     
-}

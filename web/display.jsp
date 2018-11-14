@@ -15,7 +15,7 @@
         <title>wyniki</title>
     </head>
     <body>
-        <h1>Wyniki wyszukiwania: </h1>
+        <h1>Parametry wyszukiwania: </h1>
         
         <%
             String poleId = request.getParameter("id");
@@ -56,7 +56,7 @@
             </tbody>
         </table>
                 
-                
+         <h1>Twój wynik: </h1>
                 
 
         
