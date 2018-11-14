@@ -18,7 +18,16 @@
     
         <h1>Katalog filmów to: </h1>
         
-        <%= testBD.main;%>
+        <% 
+            testBD myBD = new testBD();
+            out.print(myBD.show());
+            
+            out.print(myBD.main());
+            
+        
+        
+        
+        %>
         
     
 </html>
