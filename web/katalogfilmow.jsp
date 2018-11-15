@@ -20,9 +20,9 @@
         
         <% 
             testBD myBD = new testBD();
-            out.print(myBD.show());
+         
             
-            out.print(myBD.main());
+          
             
         
         
