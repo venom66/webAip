@@ -13,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Katalog</h1>
         <%
         String USERNAME = "root";
         String PASSWORD = "";
@@ -48,7 +48,7 @@
         
         }
        
-       
+       conn.close();
 
         %> 
         
