@@ -52,7 +52,7 @@ and open the template in the editor.
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="#"> Home </a></li>
 					<li><a href="#omnie"> O mnie  </a></li>
-					<li><a href="katalogfilmow.jsp"> Katalog filmow </a></li>
+					<li><a href="katalogfilmow4.jsp"> Katalog filmow </a></li>
 					<li><a href="#kontakt"> Kontakt </a></li>
 				</ul>
 					

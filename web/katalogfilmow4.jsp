@@ -13,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Katalog</h1>
+        <h1>Katalog Filmów</h1>
         <%
         String USERNAME = "root";
         String PASSWORD = "";
@@ -34,17 +34,17 @@
         {
             out.println("</br>");
             out.println(rs.getString(1));
-            out.println("</br>");
+            out.println(" | ");
             out.println(rs.getString(2));
-            out.println("</br>");
+            out.println(" | ");
             out.println(rs.getString(3));
-            out.println("</br>");
+            out.println(" | ");
             out.println(rs.getString(4));
-            out.println("</br>");
+            out.println(" | ");
             out.println(rs.getString(5));
-            out.println("</br>");
-            out.println("--------------------------");
-            out.println("</br>");
+            out.println(" | ");
+            out.println("---");
+            out.println(" | ");
         
         }
        
@@ -52,6 +52,6 @@
 
         %> 
         
-        
+      
     </body>
 </html>
